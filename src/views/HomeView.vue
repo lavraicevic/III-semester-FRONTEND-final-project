@@ -1,15 +1,15 @@
 <script>
-import Card from '../components/Card.vue'
+import Card from '../components/HomeCard.vue'
 
-export default{
-  components:{
-    Card
-  }
+export default {
+  components: {
+    Card,
+  },
 }
 </script>
 
 <template>
-  <main class="mx-auto w-3/4 mt-10 pt-20">
+  <main class="mx-auto w-3/4 mt-10">
     <!-- Landing paragraph -->
     <section class="bg-blue-100 rounded-lg lg:grid lg:h-150 lg:place-content-center lg:rounded-xl">
       <div class="mx-auto w-screen max-w-screen-xl px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
@@ -79,28 +79,25 @@ export default{
       </div>
 
       <!-- Cards -->
-        <div
-          class="mb-8 w-full mx-auto flex items-center justify-between"
-        >
-          <Card>
-              “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus
-              libero ad tempora doloribus expedita laborum saepe voluptas perferendis delectus
-              assumenda rerum, culpa aperiam dolorum, obcaecati corrupti aspernatur a.”.
-          </Card>
+      <div class="mb-8 w-full mx-auto flex items-center justify-between">
+        <Card>
+          “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus
+          libero ad tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda
+          rerum, culpa aperiam dolorum, obcaecati corrupti aspernatur a.”.
+        </Card>
 
-          <Card>
-              “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus
-              libero ad tempora doloribus expedita laborum saepe voluptas perferendis delectus
-              assumenda rerum, culpa aperiam dolorum, obcaecati corrupti aspernatur a.”.
-          </Card>
+        <Card>
+          “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus
+          libero ad tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda
+          rerum, culpa aperiam dolorum, obcaecati corrupti aspernatur a.”.
+        </Card>
 
-          <Card>
-              “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus
-              libero ad tempora doloribus expedita laborum saepe voluptas perferendis delectus
-              assumenda rerum, culpa aperiam dolorum, obcaecati corrupti aspernatur a.”.
-          </Card>
-
-        </div>
+        <Card>
+          “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus
+          libero ad tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda
+          rerum, culpa aperiam dolorum, obcaecati corrupti aspernatur a.”.
+        </Card>
+      </div>
     </section>
 
     <!-- Banner -->
@@ -120,18 +117,24 @@ export default{
 
           <!-- Email form -->
           <form class="mt-5">
-            <label for="email" class="block text-sm text-gray-500 dark:text-gray-300">Email Address</label>
+            <label for="email" class="block text-sm text-gray-500 dark:text-gray-300"
+              >Email Address</label
+            >
 
-            <input type="email" placeholder="john@example.com" class="mt-2 block w-full placeholder-gray-400/70 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300" />
+            <input
+              type="email"
+              placeholder="john@example.com"
+              class="mt-2 block w-full placeholder-gray-400/70 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300"
+            />
 
-            <button class="mt-4 px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+            <button
+              class="mt-4 px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80"
+            >
               Submit
             </button>
           </form>
         </div>
       </div>
-      
     </section>
-
   </main>
 </template>

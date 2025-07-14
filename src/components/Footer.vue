@@ -5,6 +5,11 @@ export default {
   components: {
     FooterItem,
   },
+  data() {
+    return {
+      items: ['Overview', 'Features', 'Pricing', 'Careers', 'Help', 'Privacy'],
+    }
+  },
 }
 </script>
 
@@ -16,12 +21,7 @@ export default {
       </a>
 
       <div class="flex flex-wrap items-center justify-center gap-4 mt-6 lg:gap-6 lg:mt-0">
-        <FooterItem>Overview</FooterItem>
-        <FooterItem>Features</FooterItem>
-        <FooterItem>Pricing</FooterItem>
-        <FooterItem>Careers</FooterItem>
-        <FooterItem>Help</FooterItem>
-        <FooterItem>Privacy</FooterItem>
+        <FooterItem v-for="(item, index) in items" :key="index">{{ item }}</FooterItem>
       </div>
 
       <p class="mt-6 text-sm text-gray-500 lg:mt-0">

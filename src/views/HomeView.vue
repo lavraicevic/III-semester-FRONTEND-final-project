@@ -1,9 +1,18 @@
 <script>
-import Card from '../components/HomeCard.vue'
+import Card from '../components/DescriptionCard.vue'
 
 export default {
   components: {
     Card,
+  },
+  data() {
+    return {
+      cardDescription: [
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero ad tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda rerum, culpa aperiam dolorum, obcaecati corrupti aspernatur a.',
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero ad tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda rerum, culpa aperiam dolorum, obcaecati corrupti aspernatur a.',
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero ad tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda rerum, culpa aperiam dolorum, obcaecati corrupti aspernatur a.',
+      ],
+    }
   },
 }
 </script>
@@ -80,23 +89,7 @@ export default {
 
       <!-- Cards -->
       <div class="mb-8 w-full mx-auto flex items-center justify-between">
-        <Card>
-          “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus
-          libero ad tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda
-          rerum, culpa aperiam dolorum, obcaecati corrupti aspernatur a.”.
-        </Card>
-
-        <Card>
-          “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus
-          libero ad tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda
-          rerum, culpa aperiam dolorum, obcaecati corrupti aspernatur a.”.
-        </Card>
-
-        <Card>
-          “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus
-          libero ad tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda
-          rerum, culpa aperiam dolorum, obcaecati corrupti aspernatur a.”.
-        </Card>
+        <Card v-for="description in cardDescription">"{{ description }}"</Card>
       </div>
     </section>
 
@@ -106,7 +99,7 @@ export default {
         <div class="max-w-prose">
           <h1 class="text-4xl font-bold text-white sm:text-5xl">
             Understand user flow and
-            <strong class="text-indigo-600"> increase </strong>
+            <strong class="text-indigo-500"> increase </strong>
             conversions
           </h1>
 

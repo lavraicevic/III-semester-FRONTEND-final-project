@@ -12,8 +12,15 @@ export default {
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero ad tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda rerum, culpa aperiam dolorum, obcaecati corrupti aspernatur a.',
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero ad tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda rerum, culpa aperiam dolorum, obcaecati corrupti aspernatur a.',
       ],
+      email: ''
     }
   },
+  methods:{
+    emailVerification(){
+      alert('Email: ' + this.email + ' is verified')
+      this.email = ''
+    }
+  }
 }
 </script>
 
@@ -109,19 +116,20 @@ export default {
           </p>
 
           <!-- Email form -->
-          <form class="mt-5">
+          <form class="mt-5" @submit.prevent="emailVerification()">
             <label for="email" class="block text-sm text-gray-500 dark:text-gray-300"
-              >Email Address</label
+              >Email Address
+              <input
+                type="email"
+                placeholder="john@example.com"
+                v-model="email"
+                class="mt-2 block w-full placeholder-gray-400/70 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300"
+              />
+            </label
             >
-
-            <input
-              type="email"
-              placeholder="john@example.com"
-              class="mt-2 block w-full placeholder-gray-400/70 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300"
-            />
-
             <button
               class="mt-4 px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80"
+              type="submit"
             >
               Submit
             </button>

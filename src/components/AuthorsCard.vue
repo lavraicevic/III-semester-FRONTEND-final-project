@@ -2,13 +2,13 @@
 import Card from '@/components/BlogsInAuthor.vue'
 
 export default {
-  components:{
-    Card
+  components: {
+    Card,
   },
   data() {
     return {
       toggled: false,
-      someArray: [1,2,3,4]
+      someArray: [1, 2, 3, 4],
     }
   },
   methods: {
@@ -68,13 +68,12 @@ export default {
       </div>
     </div>
     <!-- Dropdown menu -->
-    <section class="container py-10 mx-auto grid grid-cols-4 gap-5 transition-all" :class="toggled ? '' : 'hidden' ">
+    <section
+      class="container py-10 mx-auto grid grid-cols-4 gap-5 transition-all"
+      :class="toggled ? '' : 'hidden'"
+    >
       <!-- Authors Blogs -->
-      <Card v-for="items in someArray"/>
+      <Card v-for="items in someArray" />
     </section>
-
   </section>
-  
-  
-  
 </template>

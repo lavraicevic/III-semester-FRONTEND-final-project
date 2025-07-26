@@ -1,14 +1,25 @@
 <script>
 import Card from '@/components/BlogsInAuthor.vue'
-
+import { useBlogStore } from '@/stores/blogs'
 export default {
+  props:{
+    info:{
+      type: Object,
+      required: true
+    }
+  },
   components: {
     Card,
   },
   data() {
     return {
       toggled: false,
-      someArray: [1, 2, 3, 4],
+      blogStore: useBlogStore()
+    }
+  },
+  computed:{
+    authorBlogs() {
+      return this.blogStore.blogs.filter(blog => blog.author.id === this.info.id)
     }
   },
   methods: {
@@ -25,7 +36,7 @@ export default {
       <div class="lg:-mx-6 lg:flex lg:items-center lg:justify-around">
         <img
           class="object-cover object-center lg:mx-6 w-full h-96 rounded-lg lg:w-2/5 lg:h-[25rem]"
-          src="https://images.unsplash.com/photo-1499470932971-a90681ce8530?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+          :src="info.avatar"
           alt=""
         />
 
@@ -33,17 +44,15 @@ export default {
           <p class="text-5xl font-semibold text-blue-500">“</p>
 
           <h1 class="text-2xl font-semibold text-gray-800 lg:text-3xl lg:w-96">
-            Help us improve our productivity
+            Hi I am {{ info.name }}
           </h1>
 
           <p class="max-w-lg mt-6 text-gray-500">
-            “ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus
-            libero ad tempora doloribus expedita laborum saepe voluptas perferendis delectus
-            assumenda rerum, culpa aperiam dolorum, obcaecati corrupti aspernatur a. ”
+            “ {{ info.description }} ”
           </p>
 
-          <h3 class="mt-6 text-lg font-medium text-blue-500">Mia Brown</h3>
-          <p class="text-gray-600">Marketing Manager at Stech</p>
+          <h3 class="mt-6 text-lg font-medium text-blue-500">{{ info.name }}</h3>
+          <p class="text-gray-600">{{ info.job }}</p>
           <!-- dropdown -->
           <div class="mt-10 flex justify-end mx-10" @click="toggle">
             <div class="border p-3 rounded-full cursor-pointer">
@@ -69,11 +78,15 @@ export default {
     </div>
     <!-- Dropdown menu -->
     <section
-      class="container py-10 mx-auto grid grid-cols-4 gap-5 transition-all"
+      class="container py-10 mx-auto grid grid-cols-3 gap-15 transition-all"
       :class="toggled ? '' : 'hidden'"
     >
       <!-- Authors Blogs -->
-      <Card v-for="items in someArray" />
+      <Card     
+      v-for="blog in authorBlogs"
+      :key="blog.title"
+      :blog="blog"
+      />
     </section>
   </section>
 </template>

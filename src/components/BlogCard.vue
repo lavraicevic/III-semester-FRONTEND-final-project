@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-  <div class="border border-neutral-300 p-2 rounded-xl ">
+  <div class="border border-neutral-300 p-2 rounded-xl">
     <div class="relative">
       <!-- Blog image -->
       <img
@@ -19,7 +19,9 @@ export default {
         alt="Blog image"
       />
       <!-- Author name, job and Avatar -->
-      <div class="absolute ml-1 bottom-[-20px] flex p-3 bg-white border border-neutral-300 rounded-xl">
+      <div
+        class="absolute ml-1 bottom-[-20px] flex p-3 bg-white border border-neutral-300 rounded-xl"
+      >
         <img
           class="object-cover object-center w-10 h-10 rounded-full"
           :src="blog.author.avatar"

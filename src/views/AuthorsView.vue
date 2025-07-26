@@ -1,6 +1,7 @@
 <script>
 import CheckedItems from '@/components/AuthorsChecked.vue'
 import AuthorsCard from '@/components/AuthorsCard.vue'
+import { useAuthorStore } from '@/stores/authors'
 
 export default {
   components: {
@@ -18,7 +19,7 @@ export default {
         'Always growing',
       ],
       toggled: false,
-      exampleArray: [1, 2, 3],
+      authorStore: useAuthorStore(),
     }
   },
   methods: {
@@ -80,6 +81,6 @@ export default {
     </section>
 
     <!-- Authors -->
-    <AuthorsCard v-for="item in exampleArray" />
+    <AuthorsCard v-for="author in authorStore.authors" :key="index" :info="author"/>
   </main>
 </template>

@@ -36,7 +36,8 @@ export const useBlogStore = defineStore('blogs', {
       {
         title: 'Data Cleaning in Python',
         body: 'Data analysis, machine learning, and AI trends.',
-        image: 'https://static.vecteezy.com/system/resources/previews/000/457/222/non_2x/data-science-illustration-concept-modern-flat-design-concept-of-web-page-design-for-website-and-mobile-website-vector-illustration.jpg',
+        image:
+          'https://static.vecteezy.com/system/resources/previews/000/457/222/non_2x/data-science-illustration-concept-modern-flat-design-concept-of-web-page-design-for-website-and-mobile-website-vector-illustration.jpg',
         author: {
           id: 3,
           name: 'Nina Patel',
@@ -50,7 +51,8 @@ export const useBlogStore = defineStore('blogs', {
       {
         title: 'The Art of Writing Online',
         body: 'SEO, writing tips, and content strategy.',
-        image: 'https://wic-resources.s3.amazonaws.com/what-does-content-strategist-do/content-strategy-front-end-vs-back-end.png',
+        image:
+          'https://wic-resources.s3.amazonaws.com/what-does-content-strategist-do/content-strategy-front-end-vs-back-end.png',
         author: {
           id: 4,
           name: 'Liam Stone',
@@ -64,7 +66,8 @@ export const useBlogStore = defineStore('blogs', {
       {
         title: 'Talking to Users Effectively',
         body: 'Agile, product development, and team collaboration.',
-        image: 'https://static.vecteezy.com/system/resources/previews/011/731/307/non_2x/project-management-strategic-plan-to-manage-resources-for-development-working-process-and-schedule-task-completion-concept-smart-businessman-project-manager-manage-multiple-project-dashboards-nt-vector.jpg',
+        image:
+          'https://static.vecteezy.com/system/resources/previews/011/731/307/non_2x/project-management-strategic-plan-to-manage-resources-for-development-working-process-and-schedule-task-completion-concept-smart-businessman-project-manager-manage-multiple-project-dashboards-nt-vector.jpg',
         author: {
           id: 5,
           name: 'Sofia Chen',
@@ -106,7 +109,8 @@ export const useBlogStore = defineStore('blogs', {
       {
         title: 'Visualizing Insights That Matter',
         body: 'Data analysis, machine learning, and AI trends.',
-        image: 'https://c8.alamy.com/comp/2K6EADC/data-science-concept-with-people-scene-in-flat-cartoon-design-scientist-looking-through-microscope-studying-data-and-working-with-statistics-in-2K6EADC.jpg',
+        image:
+          'https://c8.alamy.com/comp/2K6EADC/data-science-concept-with-people-scene-in-flat-cartoon-design-scientist-looking-through-microscope-studying-data-and-working-with-statistics-in-2K6EADC.jpg',
         author: {
           id: 3,
           name: 'Nina Patel',
@@ -120,7 +124,8 @@ export const useBlogStore = defineStore('blogs', {
       {
         title: 'Crafting Content That Ranks: SEO Best Practices',
         body: 'SEO, writing tips, and content strategy.',
-        image: 'https://cdn-proxy.slickplan.com/wp-content/uploads/2022/08/types-of-content-strategists.jpg',
+        image:
+          'https://cdn-proxy.slickplan.com/wp-content/uploads/2022/08/types-of-content-strategists.jpg',
         author: {
           id: 4,
           name: 'Liam Stone',
@@ -134,7 +139,8 @@ export const useBlogStore = defineStore('blogs', {
       {
         title: 'Mastering Agile Product Development: From Idea to Launch',
         body: 'Agile, product development, and team collaboration.',
-        image: 'https://static.vecteezy.com/system/resources/previews/011/427/392/non_2x/project-management-executive-task-manager-flat-character-work-schedule-planning-optimization-organization-office-worker-holding-clipboard-flat-illustration-vector.jpg',
+        image:
+          'https://static.vecteezy.com/system/resources/previews/011/427/392/non_2x/project-management-executive-task-manager-flat-character-work-schedule-planning-optimization-organization-office-worker-holding-clipboard-flat-illustration-vector.jpg',
         author: {
           id: 5,
           name: 'Sofia Chen',
@@ -177,7 +183,8 @@ export const useBlogStore = defineStore('blogs', {
       {
         title: 'Data Visualization Mastery: Turning Numbers into Stories',
         body: 'Data analysis, machine learning, and AI trends.',
-        image: 'https://img.freepik.com/premium-vector/data-science-web-concept-with-people-scenes-set-flat-style-bundle-analyze-data-statistics_9209-9976.jpg',
+        image:
+          'https://img.freepik.com/premium-vector/data-science-web-concept-with-people-scenes-set-flat-style-bundle-analyze-data-statistics_9209-9976.jpg',
         author: {
           id: 3,
           name: 'Nina Patel',
@@ -191,7 +198,8 @@ export const useBlogStore = defineStore('blogs', {
       {
         title: 'Engaging Readers With Simplicity',
         body: 'SEO, writing tips, and content strategy.',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV3SVqBe-ahW01svBEAtmsgS0Q7wmmqTMq8g&s',
+        image:
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV3SVqBe-ahW01svBEAtmsgS0Q7wmmqTMq8g&s',
         author: {
           id: 4,
           name: 'Liam Stone',
@@ -205,7 +213,8 @@ export const useBlogStore = defineStore('blogs', {
       {
         title: 'Navigating Cross-Functional Teams: Collaboration Strategies for Product Managers',
         body: 'Agile, product development, and team collaboration.',
-        image: 'https://img.freepik.com/free-vector/project-management-concept-flat-style_23-2147796101.jpg',
+        image:
+          'https://img.freepik.com/free-vector/project-management-concept-flat-style_23-2147796101.jpg',
         author: {
           id: 5,
           name: 'Sofia Chen',
@@ -249,7 +258,8 @@ export const useBlogStore = defineStore('blogs', {
       {
         title: 'Cleaning and Preparing Data for Accurate Analysis',
         body: 'Data analysis, machine learning, and AI trends.',
-        image: 'https://static.vecteezy.com/system/resources/thumbnails/005/877/715/small_2x/science-research-modern-flat-concept-for-web-banner-design-scientist-studies-brain-and-analyzes-data-on-computer-screen-doing-neurobiology-research-illustration-with-isolated-people-scene-vector.jpg',
+        image:
+          'https://static.vecteezy.com/system/resources/thumbnails/005/877/715/small_2x/science-research-modern-flat-concept-for-web-banner-design-scientist-studies-brain-and-analyzes-data-on-computer-screen-doing-neurobiology-research-illustration-with-isolated-people-scene-vector.jpg',
         author: {
           id: 3,
           name: 'Nina Patel',
@@ -263,7 +273,8 @@ export const useBlogStore = defineStore('blogs', {
       {
         title: 'Technical SEO Simplified: Speed, Structure, and Schema',
         body: 'SEO, writing tips, and content strategy.',
-        image: 'https://s7d9.scene7.com/is/image/roberthalfintl/Content%20Strategist%20image:Large-1x?fmt=webp-alpha',
+        image:
+          'https://s7d9.scene7.com/is/image/roberthalfintl/Content%20Strategist%20image:Large-1x?fmt=webp-alpha',
         author: {
           id: 4,
           name: 'Liam Stone',
@@ -277,7 +288,8 @@ export const useBlogStore = defineStore('blogs', {
       {
         title: 'Effective Stakeholder Communication for Product Managers',
         body: 'Agile, product development, and team collaboration.',
-        image: 'https://static.vecteezy.com/system/resources/previews/011/429/655/non_2x/tiny-people-project-managers-work-on-vision-and-scope-document-vision-and-scope-document-project-main-plan-project-management-document-concept-flat-modern-illustration-vector.jpg',
+        image:
+          'https://static.vecteezy.com/system/resources/previews/011/429/655/non_2x/tiny-people-project-managers-work-on-vision-and-scope-document-vision-and-scope-document-project-main-plan-project-management-document-concept-flat-modern-illustration-vector.jpg',
         author: {
           id: 5,
           name: 'Sofia Chen',
@@ -306,7 +318,8 @@ export const useBlogStore = defineStore('blogs', {
       {
         title: 'Enhancing User Experience Through Visual Storytelling',
         body: 'UX/UI tips, design systems, user psychology, and Figma workflows.',
-        image: 'https://img.freepik.com/premium-vector/ui-ux-design-concept-with-people-scene-flat-style-woman-work-as-illustrator-drawing-content-elements-creates-buttons-layouts-vector-illustration-with-character-situation-web_9209-10269.jpg',
+        image:
+          'https://img.freepik.com/premium-vector/ui-ux-design-concept-with-people-scene-flat-style-woman-work-as-illustrator-drawing-content-elements-creates-buttons-layouts-vector-illustration-with-character-situation-web_9209-10269.jpg',
         author: {
           id: 2,
           name: 'Mark Rivera',
@@ -320,7 +333,8 @@ export const useBlogStore = defineStore('blogs', {
       {
         title: 'Getting Started with Machine Learning',
         body: 'Data analysis, machine learning, and AI trends.',
-        image: 'https://bernardmarr.com/img/What%20Really%20Is%20Data%20Science%20A%20Super%20Simple%20Explanation%20For%20Anyone.png',
+        image:
+          'https://bernardmarr.com/img/What%20Really%20Is%20Data%20Science%20A%20Super%20Simple%20Explanation%20For%20Anyone.png',
         author: {
           id: 3,
           name: 'Nina Patel',
@@ -334,7 +348,8 @@ export const useBlogStore = defineStore('blogs', {
       {
         title: "SEO Writing: Boosting Your Website's Visibility",
         body: 'SEO, writing tips, and content strategy.',
-        image: 'https://www.simplilearn.com/ice9/free_resources_article_thumb/content_strategist_job_description.jpg',
+        image:
+          'https://www.simplilearn.com/ice9/free_resources_article_thumb/content_strategist_job_description.jpg',
         author: {
           id: 4,
           name: 'Liam Stone',
@@ -348,7 +363,8 @@ export const useBlogStore = defineStore('blogs', {
       {
         title: 'How to Run a Product Sprint',
         body: 'Agile, product development, and team collaboration.',
-        image: 'https://img.freepik.com/premium-vector/management-successful-strategy-development-business-planning-motivation-leadership-project-manager-company-ceo-idea-flat-vector-illustration_277904-23988.jpg',
+        image:
+          'https://img.freepik.com/premium-vector/management-successful-strategy-development-business-planning-motivation-leadership-project-manager-company-ceo-idea-flat-vector-illustration_277904-23988.jpg',
         author: {
           id: 5,
           name: 'Sofia Chen',
@@ -362,7 +378,8 @@ export const useBlogStore = defineStore('blogs', {
       {
         title: 'Mastering API Design for Full Stack Developers',
         body: 'Web development, JavaScript frameworks, scalable backend design.',
-        image: 'https://d2ms8rpfqc4h24.cloudfront.net/understanding_fullstack_development_bd6a331177.jpg',
+        image:
+          'https://d2ms8rpfqc4h24.cloudfront.net/understanding_fullstack_development_bd6a331177.jpg',
         author: {
           id: 1,
           name: 'Alice Johnson',
@@ -376,7 +393,8 @@ export const useBlogStore = defineStore('blogs', {
       {
         title: 'Creating User-Centered Designs',
         body: 'UX/UI tips, design systems, user psychology, and Figma workflows.',
-        image: 'https://static.vecteezy.com/system/resources/previews/004/580/435/non_2x/ui-ux-programmer-flat-design-illustration-vector.jpg',
+        image:
+          'https://static.vecteezy.com/system/resources/previews/004/580/435/non_2x/ui-ux-programmer-flat-design-illustration-vector.jpg',
         author: {
           id: 2,
           name: 'Mark Rivera',
@@ -390,7 +408,8 @@ export const useBlogStore = defineStore('blogs', {
       {
         title: 'Predictive Analytics: Using Data to Forecast Trends',
         body: 'Data analysis, machine learning, and AI trends.',
-        image: 'https://www.clarkson.edu/sites/default/files/2023-06/Data-Science-Applied-Hero-1600x900.jpg',
+        image:
+          'https://www.clarkson.edu/sites/default/files/2023-06/Data-Science-Applied-Hero-1600x900.jpg',
         author: {
           id: 3,
           name: 'Nina Patel',
@@ -404,7 +423,8 @@ export const useBlogStore = defineStore('blogs', {
       {
         title: 'Technical SEO Simplified: Speed, Structure, and Schema',
         body: 'SEO, writing tips, and content strategy.',
-        image: 'https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/4jul1aN6nCRRdZ7jYzcCDX/667ea31e2854985f32630aa57a369e48/GettyImages-748339969.jpg?w=1500&h=680&q=60&fit=fill&f=faces&fm=jpg&fl=progressive&auto=format%2Ccompress&dpr=1&w=1000',
+        image:
+          'https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/4jul1aN6nCRRdZ7jYzcCDX/667ea31e2854985f32630aa57a369e48/GettyImages-748339969.jpg?w=1500&h=680&q=60&fit=fill&f=faces&fm=jpg&fl=progressive&auto=format%2Ccompress&dpr=1&w=1000',
         author: {
           id: 4,
           name: 'Liam Stone',
@@ -418,7 +438,8 @@ export const useBlogStore = defineStore('blogs', {
       {
         title: 'Balancing Scope and Speed',
         body: 'Agile, product development, and team collaboration.',
-        image: 'https://static.vecteezy.com/system/resources/previews/028/534/880/non_2x/project-management-flat-style-design-illustration-stock-illustration-vector.jpg',
+        image:
+          'https://static.vecteezy.com/system/resources/previews/028/534/880/non_2x/project-management-flat-style-design-illustration-stock-illustration-vector.jpg',
         author: {
           id: 5,
           name: 'Sofia Chen',

@@ -1,17 +1,26 @@
-<script></script>
+<script>
+export default{
+  props:{
+    blog: {
+      type:Object,
+      required: true
+    }
+  }
+}
+</script>
 <template>
-  <div class="w-full overflow-hidden rounded-lg shadow-lg">
+  <div class="w-full overflow-hidden rounded-lg shadow-lg border border-neutral-200">
     <img
-      class="object-cover w-full h-56"
-      src="https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+      class="object-cover w-full h-56 border-b border-neutral-300"
+      :src="blog.image"
       alt="avatar"
     />
 
     <div class="py-5 text-center">
       <a href="#" class="block text-xl font-bold text-gray-800" tabindex="0" role="link"
-        >John Doe</a
+        >{{ blog.title }}</a
       >
-      <span class="text-sm text-gray-700">Software Engineer</span>
+      <span class="text-sm text-gray-700">{{ blog.body }}</span>
     </div>
   </div>
 </template>

@@ -2,11 +2,11 @@
 import Card from '@/components/BlogsInAuthor.vue'
 import { useBlogStore } from '@/stores/blogs'
 export default {
-  props:{
-    info:{
+  props: {
+    info: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
   components: {
     Card,
@@ -14,13 +14,13 @@ export default {
   data() {
     return {
       toggled: false,
-      blogStore: useBlogStore()
+      blogStore: useBlogStore(),
     }
   },
-  computed:{
+  computed: {
     authorBlogs() {
-      return this.blogStore.blogs.filter(blog => blog.author.id === this.info.id)
-    }
+      return this.blogStore.blogs.filter((blog) => blog.author.id === this.info.id)
+    },
   },
   methods: {
     toggle() {
@@ -41,17 +41,15 @@ export default {
         />
 
         <div class="mt-8 lg:w-1/2 lg:px-6 lg:mt-0 rounded-xl py-10">
-          <p class="text-5xl font-semibold text-blue-500">“</p>
+          <p class="text-5xl font-semibold text-indigo-500">“</p>
 
           <h1 class="text-2xl font-semibold text-gray-800 lg:text-3xl lg:w-96">
             Hi I am {{ info.name }}
           </h1>
 
-          <p class="max-w-lg mt-6 text-gray-500">
-            “ {{ info.description }} ”
-          </p>
+          <p class="max-w-lg mt-6 text-gray-500">“ {{ info.description }} ”</p>
 
-          <h3 class="mt-6 text-lg font-medium text-blue-500">{{ info.name }}</h3>
+          <h3 class="mt-6 text-lg font-medium text-indigo-500">{{ info.name }}</h3>
           <p class="text-gray-600">{{ info.job }}</p>
           <!-- dropdown -->
           <div class="mt-10 flex justify-end mx-10" @click="toggle">
@@ -82,11 +80,9 @@ export default {
       :class="toggled ? '' : 'hidden'"
     >
       <!-- Authors Blogs -->
-      <Card     
-      v-for="blog in authorBlogs"
-      :key="blog.title"
-      :blog="blog"
-      />
+      <RouterLink v-for="blog in authorBlogs" :key="blog.id" :to="`/blogs/${blog.id}`">
+        <Card :blog="blog" class="cursor-pointer" />
+      </RouterLink>
     </section>
   </section>
 </template>

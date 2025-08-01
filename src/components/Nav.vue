@@ -8,7 +8,7 @@ export default {
 </script>
 <template>
   <header>
-    <nav class="w-full bg-white shadow fixed top-0">
+    <nav class="w-full bg-white shadow fixed top-0 z-10">
       <div class="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize">
         <img src="../assets/logo.svg" alt="logo" class="size-8 mr-5" />
         {{}}

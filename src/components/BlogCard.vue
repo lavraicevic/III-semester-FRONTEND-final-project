@@ -5,6 +5,10 @@ export default {
       type: Object,
       required: true,
     },
+    index: {
+      type: Number,
+      required: true,
+    },
   },
 }
 </script>
@@ -44,7 +48,10 @@ export default {
     <p class="text-sm text-gray-500">
       {{ blog.body }}
     </p>
-
-    <a href="#" class="inline-block mt-4 text-blue-500 underline hover:text-blue-400">Read more</a>
+    <RouterLink :key="blog.id" :to="`/blogs/${blog.id}`">
+      <p class="inline-block mt-4 text-indigo-500 underline cursor-pointer hover:text-blue-400">
+        Read more
+      </p>
+    </RouterLink>
   </div>
 </template>

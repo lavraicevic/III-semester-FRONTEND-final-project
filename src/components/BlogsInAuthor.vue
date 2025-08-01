@@ -1,11 +1,15 @@
 <script>
-export default{
-  props:{
+export default {
+  props: {
     blog: {
-      type:Object,
-      required: true
-    }
-  }
+      type: Object,
+      required: true,
+    },
+    index: {
+      type: Number,
+      required: true,
+    },
+  },
 }
 </script>
 <template>
@@ -16,11 +20,11 @@ export default{
       alt="avatar"
     />
 
-    <div class="py-5 text-center">
-      <a href="#" class="block text-xl font-bold text-gray-800" tabindex="0" role="link"
-        >{{ blog.title }}</a
-      >
-      <span class="text-sm text-gray-700">{{ blog.body }}</span>
+    <div class="py-5 text-center px-2">
+      <a href="#" class="block text-xl font-bold text-gray-800" tabindex="0" role="link">{{
+        blog.title
+      }}</a>
+      <span class="text-sm text-neutral-500">{{ blog.body }}</span>
     </div>
   </div>
 </template>

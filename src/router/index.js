@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import NotExist from '../views/NotExist.vue'
 import BlogsView from '../views/BlogsView.vue'
 import AuthorsView from '../views/AuthorsView.vue'
+import SingularBlog from '../views/SingularBlog.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,6 +27,12 @@ const router = createRouter({
       path: '/not-exist',
       name: 'not-exist',
       component: NotExist,
+    },
+    {
+      path: '/blogs/:id',
+      name: 'singular-blog',
+      component: SingularBlog,
+      props: true,
     },
   ],
 })

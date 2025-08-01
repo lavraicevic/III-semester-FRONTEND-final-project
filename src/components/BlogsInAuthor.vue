@@ -4,11 +4,7 @@ export default {
     blog: {
       type: Object,
       required: true,
-    },
-    index: {
-      type: Number,
-      required: true,
-    },
+    }
   },
 }
 </script>

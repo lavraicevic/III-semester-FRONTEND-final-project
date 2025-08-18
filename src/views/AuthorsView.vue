@@ -81,6 +81,5 @@ export default {
     </section>
 
     <!-- Authors -->
-    <AuthorsCard v-for="author in authorStore.authors" :key="author.id" :info="author" />
   </main>
 </template>

@@ -22,7 +22,7 @@ export default {
         const matchesSearch = blog.title.toLowerCase().includes(this.searchQuery.toLowerCase())
         return matchesAuthor && matchesSearch
       })
-    }
+    },
   },
   methods: {
     clearFilter() {
@@ -95,9 +95,9 @@ export default {
             </div>
             <!-- Filters -->
             <div class="pl-5 flex flex-col gap-1 items-start w-full">
-            <label
-            v-for="author in authorStore.authors"
-            class="flex items-center gap-2 text-lg cursor-pointer w-full"
+              <label
+                v-for="author in authorStore.authors"
+                class="flex items-center gap-2 text-lg cursor-pointer w-full"
               >
                 <input
                   type="radio"

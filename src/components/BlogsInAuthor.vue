@@ -4,7 +4,7 @@ export default {
     blog: {
       type: Object,
       required: true,
-    }
+    },
   },
 }
 </script>
